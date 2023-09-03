@@ -64,7 +64,7 @@ public class StudentController {
 	}
 	@GetMapping
 	public List<StudentDetails> findAll(){
-		List<Student> list1;//service.findAll();
+		List<Student> list=service.findAll();
 		List<StudentDetails> studList = studentUtil.toDetails(list);
 		return studList;
 	}
